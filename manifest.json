@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "That's Enough!",
+  "description": "Redirects FB, Insta and Twitter to Google",
+  "version": "1.0.0",
+
+  "browser_action": {
+    "default_icon": "dislike.png",
+    "default_popup": "popup.html",
+    "default_title": "That's Enough!"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "webRequest",
+    "webRequestBlocking",
+    "https://www.facebook.com/*",
+    "https://www.twitter.com/*",
+    "https://www.instagram.com/*"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
